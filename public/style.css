@@ -5,6 +5,10 @@
     padding: 0px;
 }
 @media (max-width: 1200px) and (orientation: landscape){
+    div.portfolio-item img{
+        width: 80%!important;
+        height: auto!important;
+    }
     .scrollhint {
         position: absolute;
         left: 80vw;
@@ -81,6 +85,10 @@
     }
 }
 @media (max-width: 1200px) and (orientation: portrait){
+    div.portfolio-item img{
+        width: 80%!important;
+        height: auto!important;
+    }
     div.portfolio-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr))!important;
@@ -168,7 +176,7 @@ html {
     scroll-behavior: smooth;
   }
 body {
-    font-family: 'Quantico', sans serif;
+    font-family: 'Quantico', sans-serif;
     margin-top: 0rem;
 }
 body.background-img{
@@ -252,8 +260,11 @@ h2.h2-sections {
 }
 #aboutme {
     margin: 1rem;
+}
+p.aboutme {
     border: 4px dashed black;
     border-radius: 5px;
+    padding: 1rem;
 }
 
 div.portfolio-container {
@@ -268,11 +279,58 @@ div.portfolio-item {
 #portfolio {
     margin: 1rem;
 }
+h3.h3-portfolio {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
 div.portfolio-item img{
     display: block;
     margin-left: auto; 
     margin-right: auto;
+    width: auto;
+    height: 250px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 p.p-portfolio{
     word-wrap: break-word;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.p-portfolio a {
+    color: black;
+}
+form {
+    max-width: 100%;
+}
+.feedback-input{
+    font-family: 'Quantico', sans-serif;
+    border: 4px dashed black;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    outline: 0px;
+}
+textarea {
+    height: 150px;
+    line-height: 150%;
+}
+.submitbutton {
+    font-family: 'Quantico', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border: 4px dashed black;
+    border-radius: 5px;
+    height: 3rem;
+    width: auto;
+    background-color: white;
+    cursor: pointer;
+}
+.submitbutton:hover {
+    color: lightsteelblue;
 }
