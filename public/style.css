@@ -334,3 +334,8 @@ textarea {
 .submitbutton:hover {
     color: lightsteelblue;
 }
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
