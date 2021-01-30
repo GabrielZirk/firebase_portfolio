@@ -14,7 +14,7 @@
 <body class="background-img">
     <div class="parent-container">
 
-        <div class="left-col-logo" id="left-col">
+        <div class="left-col-logo" id="left-col" role="banner">
             <p class="scrollhint"></p>
             <p class="logotext1">Data</p>
             <p class="logotext2">meets</p>
@@ -32,80 +32,89 @@
                     </ul>
                 </nav>
             </header>
-            <section id="aboutme">
-                <h2 class="h2-sections">Hi :)</h2>
-                <p class="aboutme"><b>Gabriel Zirkovits in a nutshell</b> <br> I'm based in the lovely city Graz, Austria and
-                    right on my journey to becoming a full-stack data scientist/data engineer. My skills range from
-                    exploratory data analysis to visualization and communication using python. Currently, I gain more
-                    insight into machine learning by attending Udemy courses and reading books about Scikit-Learn, Keras
-                    and Tensorflow. To further achieve my goal, I started my studies in business data science at the FH
-                    Campus 02.
-                    <br> Since you have already landed on my portfolio website, take some time and browse through my
-                    projects. And please do not hesitate to contact me to give feedback or suggestions.<br> Have fun!
-                </p>
+            <main>
+                <section id="aboutme" aria-label="about me section">
+                    <h2 class="h2-sections">Hi :)</h2>
+                    <p class="aboutme"><b>Gabriel Zirkovits in a nutshell</b> <br> I'm based in the lovely city Graz,
+                        Austria and
+                        right on my journey to becoming a full-stack data scientist/data engineer. My skills range from
+                        exploratory data analysis to visualization and communication using python. Currently, I gain
+                        more
+                        insight into machine learning by attending Udemy courses and reading books about Scikit-Learn,
+                        Keras
+                        and Tensorflow. To further achieve my goal, I started my studies in business data science at the
+                        FH
+                        Campus 02.
+                        <br> Since you have already landed on my portfolio website, take some time and browse through my
+                        projects. And please do not hesitate to contact me to give feedback or suggestions.<br> Have
+                        fun!
+                    </p>
 
-            </section>
-            <section id="portfolio">
-                <h2 class="h2-sections">portfolio</h2>
-                <div class="portfolio-container">
-                    <div class="portfolio-item">
-                        <h3 class="h3-portfolio">Run run run // 01.2021</h3>
-                        <img src="img/run_dashboard.JPG" alt="running analysis dashboard">
-                        <p class="p-portfolio"> Thought it would be fun to link two things I quite enjoy: doing sports
-                            and data analysis. So I created
-                            a <a href="https://gzrunninganalysis.herokuapp.com/" target="_blank"> dashboard to analyse
-                                my runs</a>.
-                            For data collection I used the <a href="https://www.myworkouts.org/"
-                                target="_blank">myWorkouts App</a>
-                            and a <a href="https://de-eu.wahoofitness.com/" target="_blank">Wahoo</a> belt to record my
-                            heart rate.
-                            Data analysis/manipulation was done with pandas, plotting with plotly/dash. The project is
-                            not yet
-                            finished, I'm going to continously improve the plots, especially the layout.
-                        </p>
-                    </div>
-                    <div class="portfolio-item">
-                        <h3 class="h3-portfolio">Connect 4 // 01.2021</h3>
-                        <img src="img/connect4.JPG" alt="connect 4 game">
-                        <p class="p-portfolio"> It was an assignment for the software development class at college. The
-                            task was to code the game <a href="https://gabrielzirk.github.io/viergewinnt.html"
-                                target="_blank">connect4"</a> in python. Have fun playing. :)
-                        </p>
-                    </div>
-                    <div class="portfolio-item">
-
-                        <h3 class="h3-portfolio">Covid19 dashboard // 12.2020</h3>
-                        <img src="img/covid19_dashboard.jpg" alt="covid19 dashboard">
-                        <p class="p-portfolio"> It's a <a href="https://gzcovid19dash.herokuapp.com/" target="_blank">
-                                representation </a> of the
-                            Covid19-cases in Austria. Data analysis/manipulation with python package pandas. For the
-                            purpose of
-                            visualization I used plotly and dash. To create the Choropleth map I used geodata from <a
-                                href="https://www.data.gv.at/" target="_blank">Open Data Österreich</a>. The
-                            plots are autoupdating, downloading the data from the AGES.
-                        </p>
-                    </div>
-                </div>
-                <section id="contact">
-                    <h2 class="h2-sections">contact</h2>
-                    <div class="contact-form">
-                        <form action="https://formspree.io/f/xyybopll" method="post">
-                            <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                            <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                            <textarea name="message" class="feedback-input" placeholder="Comment"></textarea>
-                            <input type="submit" class="submitbutton" value="SUBMIT" />
-                        </form>
-                    </div>
                 </section>
+                <section id="portfolio" arial-label="portfolio">
+                    <h2 class="h2-sections">portfolio</h2>
+                    <div class="portfolio-container">
+                        <div class="portfolio-item">
+                            <h3 class="h3-portfolio">Run run run // 01.2021</h3>
+                            <img src="img/run_dashboard.JPG" alt="running analysis dashboard">
+                            <p class="p-portfolio"> Thought it would be fun to link two things I quite enjoy: doing
+                                sports
+                                and data analysis. So I created
+                                a <a href="https://gzrunninganalysis.herokuapp.com/" target="_blank"> dashboard to
+                                    analyse
+                                    my runs</a>.
+                                For data collection I used the <a href="https://www.myworkouts.org/"
+                                    target="_blank">myWorkouts App</a>
+                                and a <a href="https://de-eu.wahoofitness.com/" target="_blank">Wahoo</a> belt to record
+                                my
+                                heart rate.
+                                Data analysis/manipulation was done with pandas, plotting with plotly/dash. The project
+                                is
+                                not yet
+                                finished, I'm going to continously improve the plots, especially the layout.
+                            </p>
+                        </div>
+                        <div class="portfolio-item">
+                            <h3 class="h3-portfolio">Connect 4 // 01.2021</h3>
+                            <img src="img/connect4.JPG" alt="connect 4 game">
+                            <p class="p-portfolio"> It was an assignment for the software development class at college.
+                                The
+                                task was to code the game <a href="https://gabrielzirk.github.io/viergewinnt.html"
+                                    target="_blank">connect4"</a> in python. Have fun playing. :)
+                            </p>
+                        </div>
+                        <div class="portfolio-item">
+
+                            <h3 class="h3-portfolio">Covid19 dashboard // 12.2020</h3>
+                            <img src="img/covid19_dashboard.jpg" alt="covid19 dashboard">
+                            <p class="p-portfolio"> It's a <a href="https://gzcovid19dash.herokuapp.com/"
+                                    target="_blank">
+                                    representation </a> of the
+                                Covid19-cases in Austria. Data analysis/manipulation with python package pandas. For the
+                                purpose of
+                                visualization I used plotly and dash. To create the Choropleth map I used geodata from
+                                <a href="https://www.data.gv.at/" target="_blank">Open Data Österreich</a>. The
+                                plots are autoupdating, downloading the data from the AGES.
+                            </p>
+                        </div>
+                    </div>
+                    <section id="contact">
+                        <h2 class="h2-sections">contact</h2>
+                        <div class="contact-form">
+                            <form action="https://formspree.io/f/xyybopll" method="post" aria-label="contact form">
+                                <input name="name" type="text" class="feedback-input" placeholder="Name" aria-label="input name" />
+                                <input name="email" type="text" class="feedback-input" placeholder="Email" aria-label="input email"/>
+                                <textarea name="message" class="feedback-input" placeholder="Comment" aria-label="input message"></textarea>
+                                <input type="submit" class="submitbutton" value="SUBMIT" aria-label="submit" />
+                            </form>
+                        </div>
+                    </section>
+            </main>
         </div>
     </div>
+    <footer>
+
+    </footer>
 </body>
-
-
-
-
-
-
-
 
 </html>
