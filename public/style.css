@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box; /* The box-sizing property allows us to include the padding and border in an element's total width and height.*/
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     margin: 0px;
     padding: 0px;
 }
@@ -77,7 +77,7 @@
     nav ul {
         flex-wrap: wrap;
     }
-    nav a {
+    nav li {
         width: 100vw;
         text-align: center;
         margin-left: 0rem;
@@ -165,7 +165,7 @@
         flex-wrap: wrap;
         width: 100%;
     }
-    nav a {
+    nav li {
         width: 100%;
         text-align: center;
         margin-left: 0rem;
@@ -218,8 +218,9 @@ div.left-col-logo{
 }
 nav ul {
     display: flex;
+    list-style-type: none;
 }
-nav ul a {
+nav ul li {
     flex-grow: 1;
     text-decoration: none;
     color: black;
@@ -227,10 +228,16 @@ nav ul a {
     text-align: center;
     font-size: 1.5rem
 }
+nav li {
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+}
 nav a a {
     margin-left: 3rem;
 }
-nav a:hover {
+nav li:hover {
     background-color:lightsteelblue;
 }
 div p.logotext1 {
@@ -300,6 +307,9 @@ p.p-portfolio{
 }
 a {
     color: black;
+}
+#contact {
+    margin: 1rem;
 }
 form {
     max-width: 100%;
